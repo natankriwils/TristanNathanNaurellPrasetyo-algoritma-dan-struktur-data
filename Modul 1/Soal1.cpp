@@ -4,7 +4,7 @@ using namespace std;
 
 struct mhs
 {
-    char nama [50], nim [20], jurusan [4];
+    char nama [20], nim [10], jurusan [2];
     int sks, program;
 };
 struct mhs bayar [2];
