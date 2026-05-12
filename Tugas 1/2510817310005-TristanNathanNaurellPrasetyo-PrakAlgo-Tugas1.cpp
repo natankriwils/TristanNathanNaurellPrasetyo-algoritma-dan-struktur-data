@@ -65,7 +65,7 @@ int main()
             case 10: sisipkanSetelah(); break;
             default:
                 cout<<"\nTERIMA KASIH"<<endl;
-                cout<<"Program was made by Tristan Nathan Naurell Prasetyo (2510817310005)."<<endl;
+                cout<<"Program dibuat oleh Tristan Nathan Naurell Prasetyo (2510817310005)."<<endl;
         }
 
         cout<<"\nPress any key to continue!"<<endl;
@@ -181,7 +181,7 @@ void hapusDepan(){
 void hapusBelakang(){
     if(isEmpty() == 0){
         int n, total = hitungNode();
-        cout<<"Hapus node ke-N dari belakang, masukkan N : ";
+        cout<<"Masukan node ke-N yang ingin dihapus : ";
         cin>>n;
 
         if(n > total) n = total;
@@ -211,7 +211,7 @@ void hapusBelakang(){
             prev->next = bantu->next;
             delete bantu;
         }
-        cout<<"Node ke-"<<n<<" dari belakang dengan data \""<<dataHapus<<"\" berhasil dihapus."<<endl;
+        cout<<"data \""<<dataHapus<<"\" berhasil dihapus."<<endl;
     } else cout<<"Tidak terdapat data pada Linked List."<<endl;
 }
 
