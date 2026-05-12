@@ -66,8 +66,9 @@ void selectionSort(int arr[], int n) {
 }
 
 int splitNama(string baris, string arr[]) {
-    stringstream ss(baris); string token; int n = 0;
-    while (ss >> token) arr[n++] = token;
+    int n = 0;
+    for (int i = 0; i < (int)baris.size(); i++)
+        if (baris[i] != ' ') arr[n++] = string(1, baris[i]);
     return n;
 }
 
